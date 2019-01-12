@@ -62,10 +62,21 @@ public class DisplayDigit {
     }
 
     // TODO Rolly generate number of spaces based on the parameter
-    private static String generateSpaces(int lenth) {
-        String toRetun = "";
+    public static String generateSpaces(int length)
+    {
 
-        return toRetun;
+        String toReturn = "";
+
+        for (int a = 1; a <= length; a++)
+        {
+            toReturn += " ";
+
+
+        }
+
+
+
+        return toReturn;
     }
 
     // TODO Andreea: Display for example portions of 0 on the same line
