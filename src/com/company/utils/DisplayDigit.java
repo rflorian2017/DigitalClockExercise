@@ -78,6 +78,15 @@ public class DisplayDigit {
                                 false,
                                 0);
             //TODO: Rolly display number 6
+
+            case 6:
+                toReturn += displayLine(Constants.CHARACTER,Constants.LINE_WIDTH,false,0) + "\n" +
+                        displayLine(Constants.CHARACTER,Constants.LINE_HEIGHT,true,0) + "\n" +
+                        displayLine(Constants.CHARACTER,Constants.LINE_WIDTH,false,0) + "\n" +
+                        displayOnSameLine(Constants.CHARACTER,Constants.LINE_HEIGHT) + "\n" +
+                        displayLine(Constants.CHARACTER,Constants.LINE_WIDTH,false,0);
+                break;
+
             //TODO : Alessio : display numbers 4, 2, 5
             case 2:
                 toReturn += displayLine(Constants.CHARACTER,
