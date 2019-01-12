@@ -9,7 +9,29 @@ public class DisplayDigit {
                 //TODO Rolly, display number 1. Use displayLine
                 toReturn += "";
                 break;
-
+            case 3:
+                toReturn += displayLine(Constants.CHARACTER,
+                        Constants.LINE_WIDTH,
+                        false,
+                        0) + "\n" +
+                        displayLine(Constants.CHARACTER,
+                                Constants.LINE_HEIGHT,
+                                true,
+                                Constants.SPACE_WIDTH) +
+                        "\n" +
+                        displayLine(Constants.CHARACTER,
+                                Constants.LINE_WIDTH,
+                                false,
+                                0) + "\n" +
+                        displayLine(Constants.CHARACTER,
+                                Constants.LINE_HEIGHT,
+                                true,
+                                Constants.SPACE_WIDTH) +
+                        "\n" +
+                        displayLine(Constants.CHARACTER,
+                                Constants.LINE_WIDTH,
+                                false,
+                                0);
                 //TODO Stefan : generate number 8. With the corresponding case
             // TODO Anamaria : Display number 9
             //TODO: Rolly display number 6
@@ -27,7 +49,10 @@ public class DisplayDigit {
      */
 
     // TODO : Valy display a line
-    private static String displayLine(String character, int length, boolean isVertical, int spaceOffset) {
+    private static String displayLine(String character,
+                                      int length,
+                                      boolean isVertical,
+                                      int spaceOffset) {
         String toReturn = "";
 
 
