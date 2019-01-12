@@ -48,14 +48,24 @@ public class DisplayDigit {
                                 false,
                                 0);
             case 8:
-                toReturn += displayLine(Constants.CHARACTER, Constants.LINE_WIDTH,false, 0) + "\n"+
+                toReturn += displayLine(Constants.CHARACTER,Constants.LINE_WIDTH,false,0) +"\n"+
                         displayOnSameLine(Constants.CHARACTER,Constants.LINE_HEIGHT)+"\n"+
-                        displayLine(Constants.CHARACTER, Constants.LINE_WIDTH,false, 0)+"\n"+
+                        displayLine(Constants.CHARACTER,Constants.LINE_WIDTH,false,0)+"\n"+
                         displayOnSameLine(Constants.CHARACTER,Constants.LINE_HEIGHT)+"\n"+
-                        displayLine(Constants.CHARACTER, Constants.LINE_WIDTH,false, 0);
+                        displayLine(Constants.CHARACTER,Constants.LINE_WIDTH,false,0);
+                break;
 
             // TODO Anamaria : Display number 9
             //TODO: Rolly display number 6
+
+            case 6:
+                toReturn += displayLine(Constants.CHARACTER,Constants.LINE_WIDTH,false,0) + "\n" +
+                        displayLine(Constants.CHARACTER,Constants.LINE_HEIGHT,true,0) + "\n" +
+                        displayLine(Constants.CHARACTER,Constants.LINE_WIDTH,false,0) + "\n" +
+                        displayOnSameLine(Constants.CHARACTER,Constants.LINE_HEIGHT) + "\n" +
+                        displayLine(Constants.CHARACTER,Constants.LINE_WIDTH,false,0);
+                break;
+
             //TODO : Alessio : display numbers 4, 2, 5
         }
         return toReturn;
