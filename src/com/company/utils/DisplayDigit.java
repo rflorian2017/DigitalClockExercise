@@ -47,6 +47,7 @@ public class DisplayDigit {
                                 Constants.LINE_WIDTH,
                                 false,
                                 0);
+                break;
             case 8:
                 toReturn += displayLine(Constants.CHARACTER, Constants.LINE_WIDTH,false, 0) + "\n"+
                         displayOnSameLine(Constants.CHARACTER,Constants.LINE_HEIGHT)+"\n"+
