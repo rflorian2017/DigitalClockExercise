@@ -1,11 +1,16 @@
 package com.company.clocks;
 
+import java.time.LocalTime;
+
 // TODO : Anamaria do not allow Clock to be instantiated
 public class Clock {
     // TODO Alin M create private fields for day, year, month, hour, minute seconds
 
+
     //TODO Petruta Create a constructor with a LocalTime and a LocalDate parameter. Assign the private fields from above
-    protected Clock() {
+    protected Clock(int hours, int minutes, int seconds) {
+
+
 
     }
 
