@@ -36,6 +36,9 @@ public class DisplayBinary {
         String toReturn = "";
 
 
+        //scris ca ciobanu
+
+        /*
         if (number == 0){
             return "OOOO";
         }
@@ -103,6 +106,23 @@ public class DisplayBinary {
         else (number >= 10){
             return null;
         }
+        */
+
+        switch(number) {
+            case1: number == 0("OOOO");
+            case2: number == 1("OOOX");
+            case3: number == 2("OOXO");
+            case4: number == 3("OOXX");
+            case5: number == 4("OXOO");
+            case6: number == 5("OXOX");
+            case7: number == 6("OXXO");
+            case8: number == 7("OXXX");
+            case9: number == 8("XOOO");
+            case10:number == 9("XOOX");
+            default: break;
+            break;
+        }
+        System.out.println(number);
 
         return toReturn;
     }
