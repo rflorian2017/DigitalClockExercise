@@ -84,7 +84,7 @@ public class DisplayDigit {
                 toReturn += displayLine(Constants.CHARACTER,Constants.LINE_WIDTH,false,0) + "\n" +
                         displayLine(Constants.CHARACTER,Constants.LINE_HEIGHT,true,0) + "\n" +
                         displayLine(Constants.CHARACTER,Constants.LINE_WIDTH,false,0) + "\n" +
-                        displayOnSameLine(Constants.CHARACTER,Constants.LINE_HEIGHT) + "\n" +
+                        displayOnSameLine(Constants.CHARACTER,Constants.LINE_HEIGHT) +
                         displayLine(Constants.CHARACTER,Constants.LINE_WIDTH,false,0);
                 break;
 
