@@ -7,7 +7,8 @@ public class DisplayDigit {
             //TODO Luci : Display number 0. Create the case
             case 1:
                 //TODO Rolly, display number 1. Use displayLine
-                toReturn += "";
+                toReturn += displayLine(Constants.CHARACTER,Constants.LINE_HEIGHT,true,0) + "\n" +
+                displayLine(Constants.CHARACTER,Constants.LINE_HEIGHT,true,0);
                 break;
             case 3:
                 toReturn += displayLine(Constants.CHARACTER,
