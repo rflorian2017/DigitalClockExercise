@@ -161,7 +161,7 @@ public class DisplayDigit {
     private static String displayOnSameLine(String character, int length) {
         String toReturn = "";
         for (int i = 1; i <=length ; i++) {
-            toReturn +=Constants.CHARACTER+generateSpaces(Constants.SPACE_WIDTH)+Constants.CHARACTER;
+            toReturn +=Constants.CHARACTER+generateSpaces(Constants.SPACE_WIDTH)+Constants.CHARACTER+"\n";
         }
 
         return toReturn;
