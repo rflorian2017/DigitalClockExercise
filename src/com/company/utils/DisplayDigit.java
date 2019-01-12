@@ -77,6 +77,7 @@ public class DisplayDigit {
                                 Constants.LINE_WIDTH,
                                 false,
                                 0);
+                break;
             //TODO: Rolly display number 6
 
             case 6:
