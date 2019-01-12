@@ -1,22 +1,18 @@
 package com.company.clocks;
 
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.time.Month;
-
 // TODO : Anamaria do not allow Clock to be instantiated
 public class Clock {
     // TODO Alin M create private fields for day, year, month, hour, minute seconds
 
     private int day;
     private int year;
-    private Month month;
+    private int month;
 
     private int hour;
     private int minutes;
     private int seconds;
 
-    public Clock(int day, int year, Month month, int hour, int minutes, int seconds) {
+    public Clock(int day, int year, int month, int hour, int minutes, int seconds) {
         this.day = day;
         this.year = year;
         this.month = month;
@@ -41,11 +37,11 @@ public class Clock {
         this.year = year;
     }
 
-    public Month getMonth() {
+    public int getMonth() {
         return month;
     }
 
-    public void setMonth(Month month) {
+    public void setMonth(int month) {
         this.month = month;
     }
 
@@ -79,15 +75,7 @@ public class Clock {
     }
 
     //TODO : Alin I . Update the clock with a LocalTime parameter. Link with the corresponding private fileds
-    protected void updateClock(LocalTime zona, LocalDate datacurenta) {
-
-        this.hour= zona.getHour();
-        this.minutes=zona.getMinute();
-        this.seconds=zona.getSecond();
-
-        this.day = datacurenta.getDayOfMonth();
-        this.month = datacurenta.getMonth();
-        this.year= datacurenta.getYear();
+    protected void updateClock() {
 
     }
 
