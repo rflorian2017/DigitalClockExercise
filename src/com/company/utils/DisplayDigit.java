@@ -5,6 +5,20 @@ public class DisplayDigit {
         String toReturn = "";
         switch (number) {
             //TODO Luci : Display number 0. Create the case
+            case 0:
+                toReturn +=
+                        displayLine(Constants.CHARACTER,
+                        Constants.LINE_HEIGHT,
+                        false,
+                        0) + "\n" +
+
+                        displayOnSameLine("#",3) + "\n" +
+
+                        displayLine(Constants.CHARACTER,
+                                Constants.LINE_HEIGHT,
+                                false,
+                                0);
+                break;
             case 1:
                 //TODO Rolly, display number 1. Use displayLine
                 toReturn += "";
@@ -32,7 +46,13 @@ public class DisplayDigit {
                                 Constants.LINE_WIDTH,
                                 false,
                                 0);
-                //TODO Stefan : generate number 8. With the corresponding case
+            case 8:
+                toReturn += displayLine(Constants.CHARACTER, Constants.LINE_WIDTH,false, 0) + "\n"+
+                        displayOnSameLine(Constants.CHARACTER,Constants.LINE_HEIGHT)+"\n"+
+                        displayLine(Constants.CHARACTER, Constants.LINE_WIDTH,false, 0)+"\n"+
+                        displayOnSameLine(Constants.CHARACTER,Constants.LINE_HEIGHT)+"\n"+
+                        displayLine(Constants.CHARACTER, Constants.LINE_WIDTH,false, 0);
+
             // TODO Anamaria : Display number 9
             //TODO: Rolly display number 6
             //TODO : Alessio : display numbers 4, 2, 5
