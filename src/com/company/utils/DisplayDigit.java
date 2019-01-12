@@ -5,6 +5,20 @@ public class DisplayDigit {
         String toReturn = "";
         switch (number) {
             //TODO Luci : Display number 0. Create the case
+            case 0:
+                toReturn +=
+                        displayLine(Constants.CHARACTER,
+                        Constants.LINE_HEIGHT,
+                        false,
+                        0) + "\n" +
+
+                        displayOnSameLine("#",3) + "\n" +
+
+                        displayLine(Constants.CHARACTER,
+                                Constants.LINE_HEIGHT,
+                                false,
+                                0);
+                break;
             case 1:
                 //TODO Rolly, display number 1. Use displayLine
                 toReturn += "";
