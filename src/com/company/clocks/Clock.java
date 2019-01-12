@@ -1,7 +1,5 @@
 package com.company.clocks;
 
-import java.time.LocalDate;
-
 // TODO : Anamaria do not allow Clock to be instantiated
 public class Clock {
     // TODO Alin M create private fields for day, year, month, hour, minute seconds
@@ -81,10 +79,8 @@ public class Clock {
 
     }
 
-    protected void updateDate(LocalDate ld) {
-        this.year = ld.getYear();
-        this.month = ld.getMonthValue();
-        this.day = ld.getDayOfMonth();
+    //TODO : Stefan . Update the clock with a LocalDate parameter. Link with the corresponding private fileds
+    protected void updateDate() {
 
     }
 
