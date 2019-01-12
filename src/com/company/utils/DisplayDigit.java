@@ -5,9 +5,24 @@ public class DisplayDigit {
         String toReturn = "";
         switch (number) {
             //TODO Luci : Display number 0. Create the case
+            case 0:
+                toReturn +=
+                        displayLine(Constants.CHARACTER,
+                        Constants.LINE_HEIGHT,
+                        false,
+                        0) + "\n" +
+
+                        displayOnSameLine("#",3) + "\n" +
+
+                        displayLine(Constants.CHARACTER,
+                                Constants.LINE_HEIGHT,
+                                false,
+                                0);
+                break;
             case 1:
                 //TODO Rolly, display number 1. Use displayLine
-                toReturn += "";
+                toReturn += displayLine(Constants.CHARACTER,Constants.LINE_HEIGHT,true,0) + "\n" +
+                displayLine(Constants.CHARACTER,Constants.LINE_HEIGHT,true,0);
                 break;
             case 3:
                 toReturn += displayLine(Constants.CHARACTER,
@@ -32,8 +47,35 @@ public class DisplayDigit {
                                 Constants.LINE_WIDTH,
                                 false,
                                 0);
-                //TODO Stefan : generate number 8. With the corresponding case
+            case 8:
+                toReturn += displayLine(Constants.CHARACTER, Constants.LINE_WIDTH,false, 0) + "\n"+
+                        displayOnSameLine(Constants.CHARACTER,Constants.LINE_HEIGHT)+"\n"+
+                        displayLine(Constants.CHARACTER, Constants.LINE_WIDTH,false, 0)+"\n"+
+                        displayOnSameLine(Constants.CHARACTER,Constants.LINE_HEIGHT)+"\n"+
+                        displayLine(Constants.CHARACTER, Constants.LINE_WIDTH,false, 0);
+
             // TODO Anamaria : Display number 9
+                toReturn += displayLine(Constants.CHARACTER,
+                        Constants.LINE_WIDTH,
+                        false,
+                        0) + "\n" +
+                        displayOnSameLine(Constants.CHARACTER,
+                                Constants.LINE_HEIGHT
+                               ) +
+                        "\n" +
+                        displayLine(Constants.CHARACTER,
+                                Constants.LINE_WIDTH,
+                                false,
+                                0) + "\n" +
+                        displayLine(Constants.CHARACTER,
+                                Constants.LINE_HEIGHT,
+                                true,
+                                Constants.SPACE_WIDTH) +
+                        "\n" +
+                        displayLine(Constants.CHARACTER,
+                                Constants.LINE_WIDTH,
+                                false,
+                                0);
             //TODO: Rolly display number 6
             //TODO : Alessio : display numbers 4, 2, 5
             case 2:
@@ -77,23 +119,49 @@ public class DisplayDigit {
                                       int length,
                                       boolean isVertical,
                                       int spaceOffset) {
+
         String toReturn = "";
+        if (!isVertical) {
+            for (int i = 0; i < length; i++) {
+                toReturn += character;
+            }
+        } else {
+            for (int i = 0; i < length; i++) {
+                if (i == length - 1)
+                    toReturn += generateSpaces(spaceOffset) + character;
+                else toReturn += generateSpaces(spaceOffset) + character + "\n";
+
+
+            }
+        }
+        return toReturn;
+    }
+
+
+    // TODO Rolly generate number of spaces based on the parameter
+    public static String generateSpaces(int length)
+    {
+
+        String toReturn = "";
+
+        for (int a = 1; a <= length; a++)
+        {
+            toReturn += " ";
+
+
+        }
+
 
 
         return toReturn;
-
-    }
-
-    // TODO Rolly generate number of spaces based on the parameter
-    private static String generateSpaces(int lenth) {
-        String toRetun = "";
-
-        return toRetun;
     }
 
     // TODO Andreea: Display for example portions of 0 on the same line
     private static String displayOnSameLine(String character, int length) {
         String toReturn = "";
+        for (int i = 1; i <=length ; i++) {
+            toReturn +=Constants.CHARACTER+generateSpaces(Constants.SPACE_WIDTH)+Constants.CHARACTER;
+        }
 
         return toReturn;
     }
