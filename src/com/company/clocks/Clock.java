@@ -83,7 +83,7 @@ public class Clock {
 
     protected void updateDate(LocalDate ld) {
         this.year = ld.getYear();
-        this.month = ld.getMonth();
+        this.month = ld.getMonthValue();
         this.day = ld.getDayOfMonth();
 
     }
