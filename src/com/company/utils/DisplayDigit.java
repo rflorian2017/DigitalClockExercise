@@ -5,18 +5,48 @@ public class DisplayDigit {
         String toReturn = "";
         switch (number) {
             //TODO Luci : Display number 0. Create the case
+            case 0:
+                toReturn +=
+                        displayLine(Constants.CHARACTER,
+                        Constants.LINE_HEIGHT,
+                        false,
+                        0) + "\n" +
+
+                        displayOnSameLine("#",3) + "\n" +
+
+                        displayLine(Constants.CHARACTER,
+                                Constants.LINE_HEIGHT,
+                                false,
+                                0);
+                break;
             case 1:
                 //TODO Rolly, display number 1. Use displayLine
                 toReturn += "";
                 break;
-            case 8:
-             toReturn+=displayLine (Constants.CHARACTER ,Constants.LINE_WIDTH,false,0 )+"\n"+
-                     displayOnSameLine(Constants.CHARACTER,Constants.LINE_HEIGHT)+"\n"+
-                     displayLine (Constants.CHARACTER ,Constants.LINE_WIDTH,false,0 )+"\n"+
-                     displayOnSameLine(Constants.CHARACTER,Constants.LINE_HEIGHT)+"\n"+
-                     displayLine (Constants.CHARACTER ,Constants.LINE_WIDTH,false,0 )
-
-
+            case 3:
+                toReturn += displayLine(Constants.CHARACTER,
+                        Constants.LINE_WIDTH,
+                        false,
+                        0) + "\n" +
+                        displayLine(Constants.CHARACTER,
+                                Constants.LINE_HEIGHT,
+                                true,
+                                Constants.SPACE_WIDTH) +
+                        "\n" +
+                        displayLine(Constants.CHARACTER,
+                                Constants.LINE_WIDTH,
+                                false,
+                                0) + "\n" +
+                        displayLine(Constants.CHARACTER,
+                                Constants.LINE_HEIGHT,
+                                true,
+                                Constants.SPACE_WIDTH) +
+                        "\n" +
+                        displayLine(Constants.CHARACTER,
+                                Constants.LINE_WIDTH,
+                                false,
+                                0);
+                //TODO Stefan : generate number 8. With the corresponding case
             // TODO Anamaria : Display number 9
             //TODO: Rolly display number 6
             //TODO : Alessio : display numbers 4, 2, 5
@@ -33,7 +63,10 @@ public class DisplayDigit {
      */
 
     // TODO : Valy display a line
-    private static String displayLine(String character, int length, boolean isVertical, int spaceOffset) {
+    private static String displayLine(String character,
+                                      int length,
+                                      boolean isVertical,
+                                      int spaceOffset) {
         String toReturn = "";
 
 
