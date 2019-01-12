@@ -8,14 +8,14 @@ public class DisplayDigit {
             case 0:
                 toReturn +=
                         displayLine(Constants.CHARACTER,
-                        Constants.LINE_HEIGHT,
+                        Constants.LINE_WIDTH,
                         false,
                         0) + "\n" +
 
                         displayOnSameLine("#",3) + "\n" +
 
                         displayLine(Constants.CHARACTER,
-                                Constants.LINE_HEIGHT,
+                                Constants.LINE_WIDTH,
                                 false,
                                 0);
                 break;
