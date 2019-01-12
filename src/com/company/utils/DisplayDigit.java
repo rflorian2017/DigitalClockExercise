@@ -36,6 +36,30 @@ public class DisplayDigit {
             // TODO Anamaria : Display number 9
             //TODO: Rolly display number 6
             //TODO : Alessio : display numbers 4, 2, 5
+            case 2:
+                toReturn += displayLine(Constants.CHARACTER,
+                        Constants.LINE_WIDTH,
+                        false,
+                        0) + "\n" +
+                        displayLine(Constants.CHARACTER,
+                                Constants.LINE_HEIGHT,
+                                true,
+                                Constants.SPACE_WIDTH) +
+                        "\n" +
+                        displayLine(Constants.CHARACTER,
+                                Constants.LINE_WIDTH,
+                                false,
+                                0) + "\n" +
+                        displayLine(Constants.CHARACTER,
+                                Constants.LINE_HEIGHT,
+                                true,
+                                0) + "\n" +
+                                Constants.SPACE_WIDTH) +
+                        "\n" +
+                        displayLine(Constants.CHARACTER,
+                                Constants.LINE_WIDTH,
+                                false,
+                                0);
         }
         return toReturn;
     }
