@@ -1,6 +1,8 @@
 package com.company.clocks;
 
+import java.time.LocalDate;
 import java.time.LocalTime;
+import java.time.Month;
 
 // TODO : Anamaria do not allow Clock to be instantiated
 public class Clock {
@@ -8,13 +10,13 @@ public class Clock {
 
     private int day;
     private int year;
-    private int month;
+    private Month month;
 
     private int hour;
     private int minutes;
     private int seconds;
 
-    public Clock(int day, int year, int month, int hour, int minutes, int seconds) {
+    public Clock(int day, int year, Month month, int hour, int minutes, int seconds) {
         this.day = day;
         this.year = year;
         this.month = month;
@@ -39,11 +41,11 @@ public class Clock {
         this.year = year;
     }
 
-    public int getMonth() {
+    public Month getMonth() {
         return month;
     }
 
-    public void setMonth(int month) {
+    public void setMonth(Month month) {
         this.month = month;
     }
 
@@ -78,14 +80,17 @@ public class Clock {
 
     //TODO : Alin I . Update the clock with a LocalTime parameter. Link with the corresponding private fileds
     protected void updateClock(LocalTime lt) {
-        this.hour = getHour();
-        this.minutes = getMinutes();
-        this.seconds = getSeconds();
+        this.hour = lt.getHour();
+        this.minutes = lt.getMinute();
+        this.seconds = lt.getSecond();
 
     }
 
     //TODO : Stefan . Update the clock with a LocalDate parameter. Link with the corresponding private fileds
-    protected void updateDate() {
+    protected void updateDate(LocalDate ld) {
+        this.month = ld.getMonth();
+        this.day = ld.getDayOfMonth();
+        this.year = ld.getYear();
 
     }
 
