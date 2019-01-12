@@ -96,8 +96,6 @@ public class DisplayDigit {
                                 Constants.LINE_HEIGHT,
                                 true,
                                 0) + "\n" +
-                                Constants.SPACE_WIDTH) +
-                        "\n" +
                         displayLine(Constants.CHARACTER,
                                 Constants.LINE_WIDTH,
                                 false,
