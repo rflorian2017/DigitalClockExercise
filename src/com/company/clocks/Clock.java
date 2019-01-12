@@ -12,6 +12,8 @@ public class Clock {
     //TODO : Alin I . Update the clock with a LocalTime parameter. Link with the corresponding private fileds
     protected void updateClock() {
 
+
+
     }
 
     //TODO : Stefan . Update the clock with a LocalDate parameter. Link with the corresponding private fileds
