@@ -47,6 +47,7 @@ public class DisplayDigit {
                                 Constants.LINE_WIDTH,
                                 false,
                                 0);
+                break;
             case 8:
                 toReturn += displayLine(Constants.CHARACTER, Constants.LINE_WIDTH,false, 0) + "\n"+
                         displayOnSameLine(Constants.CHARACTER,Constants.LINE_HEIGHT)+"\n"+
@@ -55,8 +56,60 @@ public class DisplayDigit {
                         displayLine(Constants.CHARACTER, Constants.LINE_WIDTH,false, 0);
 
             // TODO Anamaria : Display number 9
+                toReturn += displayLine(Constants.CHARACTER,
+                        Constants.LINE_WIDTH,
+                        false,
+                        0) + "\n" +
+                        displayOnSameLine(Constants.CHARACTER,
+                                Constants.LINE_HEIGHT
+                               ) +
+                        "\n" +
+                        displayLine(Constants.CHARACTER,
+                                Constants.LINE_WIDTH,
+                                false,
+                                0) + "\n" +
+                        displayLine(Constants.CHARACTER,
+                                Constants.LINE_HEIGHT,
+                                true,
+                                Constants.SPACE_WIDTH) +
+                        "\n" +
+                        displayLine(Constants.CHARACTER,
+                                Constants.LINE_WIDTH,
+                                false,
+                                0);
             //TODO: Rolly display number 6
+
+            case 6:
+                toReturn += displayLine(Constants.CHARACTER,Constants.LINE_WIDTH,false,0) + "\n" +
+                        displayLine(Constants.CHARACTER,Constants.LINE_HEIGHT,true,0) + "\n" +
+                        displayLine(Constants.CHARACTER,Constants.LINE_WIDTH,false,0) + "\n" +
+                        displayOnSameLine(Constants.CHARACTER,Constants.LINE_HEIGHT) + "\n" +
+                        displayLine(Constants.CHARACTER,Constants.LINE_WIDTH,false,0);
+                break;
+
             //TODO : Alessio : display numbers 4, 2, 5
+            case 2:
+                toReturn += displayLine(Constants.CHARACTER,
+                        Constants.LINE_WIDTH,
+                        false,
+                        0) + "\n" +
+                        displayLine(Constants.CHARACTER,
+                                Constants.LINE_HEIGHT,
+                                true,
+                                Constants.SPACE_WIDTH) +
+                        "\n" +
+                        displayLine(Constants.CHARACTER,
+                                Constants.LINE_WIDTH,
+                                false,
+                                0) + "\n" +
+                        displayLine(Constants.CHARACTER,
+                                Constants.LINE_HEIGHT,
+                                true,
+                                0) + "\n" +
+                        displayLine(Constants.CHARACTER,
+                                Constants.LINE_WIDTH,
+                                false,
+                                0);
         }
         return toReturn;
     }
@@ -114,6 +167,9 @@ public class DisplayDigit {
     // TODO Andreea: Display for example portions of 0 on the same line
     private static String displayOnSameLine(String character, int length) {
         String toReturn = "";
+        for (int i = 1; i <=length ; i++) {
+            toReturn +=Constants.CHARACTER+generateSpaces(Constants.SPACE_WIDTH)+Constants.CHARACTER+"\n";
+        }
 
         return toReturn;
     }
