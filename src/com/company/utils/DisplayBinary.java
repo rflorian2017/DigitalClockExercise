@@ -107,6 +107,8 @@ public class DisplayBinary {
         return toReturn;
     }
 
+    //oppai
+
     /*
     private String displayBinaryUnits(0) {
         String toReturn = "OOOO"
