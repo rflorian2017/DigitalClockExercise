@@ -87,10 +87,7 @@ public class Clock {
     }
 
     //TODO : Stefan . Update the clock with a LocalDate parameter. Link with the corresponding private fileds
-    protected void updateDate(LocalDate ld) {
-        this.month = ld.getMonth();
-        this.day = ld.getDayOfMonth();
-        this.year = ld.getYear();
+    protected void updateDate() {
 
     }
 
