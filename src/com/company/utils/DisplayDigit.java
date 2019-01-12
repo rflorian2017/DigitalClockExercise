@@ -53,12 +53,24 @@ public class DisplayDigit {
                                       int length,
                                       boolean isVertical,
                                       int spaceOffset) {
+
         String toReturn = "";
+        if (!isVertical) {
+            for (int i = 0; i < length; i++) {
+                toReturn += character;
+            }
+        } else {
+            for (int i = 0; i < length; i++) {
+                if (i == length - 1)
+                    toReturn += generateSpaces(spaceOffset) + character;
+                else toReturn += generateSpaces(spaceOffset) + character + "\n";
 
 
+            }
+        }
         return toReturn;
-
     }
+
 
     // TODO Rolly generate number of spaces based on the parameter
     private static String generateSpaces(int lenth) {
